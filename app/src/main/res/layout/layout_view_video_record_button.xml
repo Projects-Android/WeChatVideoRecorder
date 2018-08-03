@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.ev.wechatvideorecorder.view.CircleImageView
+        android:id="@+id/civ_video_record_outside"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="#80c8c8c8"
+        android:layout_centerInParent="true"/>
+
+    <com.ev.wechatvideorecorder.view.CircleImageView
+        android:id="@+id/civ_video_record_inside"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="#B3FFFFFF"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <com.ev.wechatvideorecorder.view.CustomCircleProgressBar
+        android:id="@+id/ccpb_video_record_progress"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/iv_video_record_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_recorder_arrow_down"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/ccpb_video_record_progress"
+        android:layout_toStartOf="@id/ccpb_video_record_progress"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_video_record_rollback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_recorder_rollback"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_video_record_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_recorder_done"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/ccpb_video_record_progress"
+        android:layout_toEndOf="@id/ccpb_video_record_progress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"/>
+</RelativeLayout>
