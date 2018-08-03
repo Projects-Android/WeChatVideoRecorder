@@ -1,4 +1,10 @@
+# WeChatVideoRecorder
+**仿微信小视频录制功能。**
+采用Camera类。
 
+
+# How to use++
+**1、Add permission in your Manifest.xml**
 ```xml
     <!-- Permission to use camera - required -->
     <uses-permission android:name="android.permission.CAMERA" />
