@@ -2,6 +2,7 @@
 **仿微信小视频录制功能。**
 采用Camera类。
 
+![image](/screenshot/1.gif)
 
 # How to use++
 **1、Add permission in your Manifest.xml**
